@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-11-03T08:32:15.465+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/DeckOfCards/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="DeckOfCards"
+        sling:resourceType="DeckOfCards/components/structure/page">
+        <logo
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="DeckOfCards/components/structure/logo"/>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="DeckOfCards/components/content/title"/>
+        <topnav
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="DeckOfCards/components/structure/topnav"/>
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="DeckOfCards/components/content/text"
+                text="&lt;p>This is a content page&lt;/p>"
+                textIsRich="true"/>
+            <dynamic_deck_cards
+                jcr:created="{Date}2020-11-02T22:24:38.399+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-11-03T08:32:15.462+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="DeckOfCards/components/content/dynamic-deck-cards/v1/dynamic-deck-cards"
+                hasSortActive="true"
+                numberForDraw="25"
+                optionSort="bySuitAndValue"/>
+        </par>
+    </jcr:content>
+</jcr:root>

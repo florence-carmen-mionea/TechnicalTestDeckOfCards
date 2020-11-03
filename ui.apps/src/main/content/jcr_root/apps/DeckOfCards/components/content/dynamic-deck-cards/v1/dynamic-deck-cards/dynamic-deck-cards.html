@@ -1,0 +1,19 @@
+<h2>Welcome to Magic Tricks</h2>
+<div class="actions_container">
+    <span>
+        <p>Generate Deck of Cards</p>
+        <button onclick="renderDeck(generateDeck())">Show deck of cards</button>
+    </span>
+    <span>
+        <p>Shuffle Deck of Cards</p>
+        <button onclick="shuffleDeckOfCards()">Shuffle deck of cards</button>
+    </span>
+    <span>
+        <p>Draw any given number of cards</p>
+        <button
+            onclick="givenNumberSortedCards('${properties.numberForDraw  @ context='html'}','${properties.hasSortActive   @ context='html'}');"
+            @context='js'>Draw number of cards</button>
+    </span>
+</div>
+<div id="error_message"></div>
+<div id="deck_container" data-number-for-draw ="${properties.numberForDraw}" data-active-sort="${properties.hasSortActive}"></div>
