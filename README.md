@@ -23,3 +23,6 @@ If you have a running AEM instance you can build and package the whole project a
 Or to deploy it to a publish instance, run
 
     mvn clean install -PautoInstallPackagePublish
+## Application Link Access 
+
+http://localhost:4502/content/DeckOfCards/en/DeckOfCards.html
